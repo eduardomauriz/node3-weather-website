@@ -8,6 +8,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 const { send } = require('process')
 
+
 //Define paths for Express configuration
 const publicDirectoryPath = path.join(__dirname, '../public') //sirve para acceder a los directorios del proyecto que queramos
 const viewsPath = path.join(__dirname, '../template/views')
@@ -15,6 +16,7 @@ const partialPath = path.join(__dirname, '../template/partials')
 
 app.listen(port,()=>{
     console.log(' at port ',port)
+    console.log('')
 })
 
 //Setup handlersbar engine and view location, view engine y views son palabras reservadas de app.set() , esto sale en la doc de nodejs
